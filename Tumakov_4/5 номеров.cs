@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -63,6 +64,7 @@ namespace Tumakov_4
 
             }
 
+
             Console.WriteLine("Задание 3. Напитки и люди.\n");
 
             Console.WriteLine("Кто вы? Назовите себя.");
@@ -94,6 +96,7 @@ namespace Tumakov_4
             Console.ReadKey();
             Console.Clear();
 
+
             Console.WriteLine("Задание 4. Дни недели.\n");
 
             Console.WriteLine("Введите номер дня недели.");
@@ -104,10 +107,26 @@ namespace Tumakov_4
             }
             else
             {
-                Console.WriteLine($"Данный номер соответсвует дню недели: {(DaysOfWeek)numbOfDay}") ;
-            } 
-            Console.ReadKey (); 
+                Console.WriteLine($"Данный номер соответсвует дню недели: {(DaysOfWeek)numbOfDay}");
+            }
+            Console.ReadKey();
             Console.Clear();
+
+
+            Console.WriteLine("Задача 5. Куклы в сумке.\n");
+
+            string[] dolls = { "Barbie Doll", "Ken", "Hello Kitty", "Sandra", "MonstrHye", "Hello Kitty", "Babybon", "Molly", "Dora", "Barbie Doll" };
+            int bag = 0;
+            foreach (string dollsCount in dolls) 
+            {
+                
+                if (dollsCount == "Barbie Doll" || dollsCount == "Hello Kitty")
+                {
+                    bag++;
+                }
+                
+            }
+            Console.WriteLine("В сумке " + bag + " куклы." );
         }
     }
 }
