@@ -101,14 +101,14 @@ namespace Tumakov_4
 
             Console.WriteLine("Введите номер дня недели.");
             int numbOfDay = int.Parse(Console.ReadLine());
-            if (numbOfDay < 1 || numbOfDay > 7)
-            {
+             if (numbOfDay < 1 || numbOfDay > 7)
+             {
                 Console.WriteLine("Вы не в Нарнии, у нас 7 дней недели.");
-            }
-            else
-            {
+             }
+             else
+             {
                 Console.WriteLine($"Данный номер соответсвует дню недели: {(DaysOfWeek)numbOfDay}");
-            }
+             }
             Console.ReadKey();
             Console.Clear();
 
